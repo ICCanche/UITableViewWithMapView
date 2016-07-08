@@ -13,6 +13,9 @@
 		75FC6CF01D301F0F001072CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FC6CEE1D301F0F001072CA /* Main.storyboard */; };
 		75FC6CF21D301F0F001072CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75FC6CF11D301F0F001072CA /* Assets.xcassets */; };
 		75FC6CF51D301F0F001072CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FC6CF31D301F0F001072CA /* LaunchScreen.storyboard */; };
+		75FC6CFD1D302075001072CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75FC6CFC1D302075001072CA /* MapKit.framework */; };
+		75FC6D041D302173001072CA /* MapHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FC6D031D302173001072CA /* MapHeaderTableViewCell.m */; };
+		75FC6D081D3027A8001072CA /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75FC6D071D3027A8001072CA /* fontawesome-webfont.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		75FC6CF11D301F0F001072CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75FC6CF41D301F0F001072CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75FC6CF61D301F0F001072CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75FC6CFC1D302075001072CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		75FC6D021D302173001072CA /* MapHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapHeaderTableViewCell.h; sourceTree = "<group>"; };
+		75FC6D031D302173001072CA /* MapHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapHeaderTableViewCell.m; sourceTree = "<group>"; };
+		75FC6D071D3027A8001072CA /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FC6CFD1D302075001072CA /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +50,7 @@
 		75FC6CD91D301F0F001072CA = {
 			isa = PBXGroup;
 			children = (
+				75FC6CFC1D302075001072CA /* MapKit.framework */,
 				75FC6CE41D301F0F001072CA /* UITableView_With_UIMapView */,
 				75FC6CE31D301F0F001072CA /* Products */,
 			);
@@ -58,14 +67,14 @@
 		75FC6CE41D301F0F001072CA /* UITableView_With_UIMapView */ = {
 			isa = PBXGroup;
 			children = (
+				75FC6D051D30276F001072CA /* Resources */,
+				75FC6CFE1D3020DF001072CA /* Cells */,
 				75FC6CE81D301F0F001072CA /* AppDelegate.h */,
 				75FC6CE91D301F0F001072CA /* AppDelegate.m */,
 				75FC6CEB1D301F0F001072CA /* ViewController.h */,
 				75FC6CEC1D301F0F001072CA /* ViewController.m */,
 				75FC6CEE1D301F0F001072CA /* Main.storyboard */,
-				75FC6CF11D301F0F001072CA /* Assets.xcassets */,
 				75FC6CF31D301F0F001072CA /* LaunchScreen.storyboard */,
-				75FC6CF61D301F0F001072CA /* Info.plist */,
 				75FC6CE51D301F0F001072CA /* Supporting Files */,
 			);
 			path = UITableView_With_UIMapView;
@@ -77,6 +86,33 @@
 				75FC6CE61D301F0F001072CA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75FC6CFE1D3020DF001072CA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				75FC6D021D302173001072CA /* MapHeaderTableViewCell.h */,
+				75FC6D031D302173001072CA /* MapHeaderTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		75FC6D051D30276F001072CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75FC6D061D30278A001072CA /* Fonts */,
+				75FC6CF11D301F0F001072CA /* Assets.xcassets */,
+				75FC6CF61D301F0F001072CA /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		75FC6D061D30278A001072CA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				75FC6D071D3027A8001072CA /* fontawesome-webfont.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75FC6CF51D301F0F001072CA /* LaunchScreen.storyboard in Resources */,
+				75FC6D081D3027A8001072CA /* fontawesome-webfont.ttf in Resources */,
 				75FC6CF21D301F0F001072CA /* Assets.xcassets in Resources */,
 				75FC6CF01D301F0F001072CA /* Main.storyboard in Resources */,
 			);
@@ -150,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75FC6CED1D301F0F001072CA /* ViewController.m in Sources */,
+				75FC6D041D302173001072CA /* MapHeaderTableViewCell.m in Sources */,
 				75FC6CEA1D301F0F001072CA /* AppDelegate.m in Sources */,
 				75FC6CE71D301F0F001072CA /* main.m in Sources */,
 			);

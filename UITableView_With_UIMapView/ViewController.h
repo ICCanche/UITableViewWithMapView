@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapHeaderTableViewCell.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, MapHeaderTableDelegate>
 
 
 @end
