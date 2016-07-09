@@ -10,7 +10,7 @@ results:
 
 ![alt tag] (https://github.com/ICCanche/UITableViewWithMapView/blob/master/screen1.png?raw=true)
 
-Scrolling up the pink header makes the UITableView reach the top.
+Scrolling up the pink header or Taping on it makes the UITableView reach the top.
 
 ![alt tag] (https://github.com/ICCanche/UITableViewWithMapView/blob/master/screen2.png?raw=true)
 
