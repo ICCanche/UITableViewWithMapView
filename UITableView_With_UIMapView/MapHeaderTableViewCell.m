@@ -102,9 +102,11 @@ CGFloat const MapHeaderCellTableViewCellHeight = 52.f;
 -(void)handleTapFrom:(id)sender {
     if (!self.isUpTableView) {
         [self.delegate HeaderFooter:self upTableView:NO];
+        self.arrowIconUILabel.text = @"";
         _upTableview = YES;
     } else {
         [self.delegate HeaderFooter:self upTableView:YES];
+        self.arrowIconUILabel.text = @"";
         _upTableview = NO;
     }
 }
