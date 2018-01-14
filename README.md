@@ -8,10 +8,10 @@ There is a custom cell class with gestureRecognizer and this class is used for t
 
 results: 
 
-![alt tag] (https://github.com/ICCanche/UITableViewWithMapView/blob/master/screen1.png?raw=true)
+![alt tag](https://github.com/ICCanche/UITableViewWithMapView/blob/master/screen1.png?raw=true)
 
 Scrolling up the pink header or Taping on it makes the UITableView reach the top.
 
-![alt tag] (https://github.com/ICCanche/UITableViewWithMapView/blob/master/screen2.png?raw=true)
+![alt tag](https://github.com/ICCanche/UITableViewWithMapView/blob/master/screen2.png?raw=true)
 
-![alt tag] (https://github.com/ICCanche/UITableViewWithMapView/blob/master/screen3.png?raw=true)
+![alt tag](https://github.com/ICCanche/UITableViewWithMapView/blob/master/screen3.png?raw=true)
